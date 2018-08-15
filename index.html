@@ -6,6 +6,7 @@
     <title>Stripe Resources</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body id="root">
@@ -132,9 +133,18 @@
             </section>
         </main>
     </div>
-    <script src="https://js.stripe.com/internal/v2/analytics.min.js"></script>
     <script>
-        Analytics.viewed('stripe_github_landing_page');
+        (() => {
+        const script = document.createElement('script');
+        script.src = 'https://js.stripe.com/internal/v2/analytics.min.js';
+        script.async = true;
+
+        script.onload = (e) => {
+            Analytics.viewed('stripe_github_landing_page');
+        }
+
+        document.head.appendChild(script);
+        })()    
     </script>
 </body>
 
