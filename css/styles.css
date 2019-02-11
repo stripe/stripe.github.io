@@ -63,7 +63,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: Open Sans, Segoe UI, sans-serif;
+  font-family: Camphor, Segoe UI, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
@@ -76,7 +76,7 @@ body {
 
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
   background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
@@ -96,6 +96,11 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+  padding-right: 10px;
+}
+
+header img {
+  height: 50px;
 }
 
 nav a {
@@ -114,6 +119,10 @@ nav a:hover {
 h2 {
   margin-bottom: 20px;
   font-size: 2.2rem;
+}
+
+main {
+  padding: 0 10px;
 }
 
 .stripes {
