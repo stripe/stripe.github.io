@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Camphor';
-  src: url('https://storage.googleapis.com/stripe-fonts/400-regular.woff2') format('woff2');
+  font-family: "Camphor";
+  src: url("https://storage.googleapis.com/stripe-fonts/400-regular.woff2")
+    format("woff2");
 }
 
 * {
@@ -68,7 +69,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: 'Camphor', Segoe UI, sans-serif;
+  font-family: "Camphor", Segoe UI, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
@@ -111,7 +112,7 @@ header img {
 nav a {
   margin-left: 40px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 1.7rem;
   text-decoration: none;
   color: #6772e5;
   font-weight: 600;
@@ -166,7 +167,7 @@ section {
 p {
   color: #6b7c93;
   font-size: 1.7rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   font-weight: 500;
 }
 
@@ -209,7 +210,9 @@ section a:visited {
 }
 
 .tools a,
-.client-libs a {
+.client-libs a,
+.signup-success section,
+.newsletter {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -235,6 +238,12 @@ section a:visited {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
+.newsletter {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+
 .tools a:first-child,
 .client-libs a:first-child {
   margin-left: 0;
@@ -255,8 +264,8 @@ section a:visited {
 
 .title {
   margin: 15px 0;
-  font-size: 1.8rem;
-  line-height: 26px;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
   font-weight: 600;
   letter-spacing: 0.025em;
 }
@@ -267,7 +276,7 @@ h3.title a {
 
 .uppercase {
   font-size: 1.7rem;
-  line-height: 26px;
+  line-height: 2.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -307,6 +316,111 @@ a.button:hover {
   box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.archive, 
+.sign-up {
+  padding: 20px 40px 40px 40px;
+}
+
+.sign-up {
+  flex: 0 0 50%;
+  padding-left: 0px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #ccc;
+
+}
+
+.sign-up form {
+  margin-top: 25px;
+}
+
+.archive li {
+  margin-top: 15px;
+  font-size: 1.7rem;
+}
+
+.collect-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-box-shadow 0.15s ease;
+  transition: -webkit-box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
+  box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 440px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #32325d;
+
+}
+
+.collect-email input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 9px 13px;
+  background: transparent;
+  font: inherit;
+  color: #32325d;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 50%;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.collect-email button {
+  height: inherit;
+  box-shadow: none;
+  color: #0099e5;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 9px 13px;
+  font: inherit;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: #6772e5;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  padding-left: 15px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.collect-email button:hover {
+  transform: translateY(-1px);
+}
+
+.signup-success {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.signup-success section {
+  max-width: 600px;
+  height: 200px;
+}
+
+.signup-success p {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
