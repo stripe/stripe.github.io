@@ -111,7 +111,7 @@ header img {
 nav a {
   margin-left: 40px;
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 17px;
   text-decoration: none;
   color: #6772e5;
   font-weight: 600;
@@ -123,7 +123,7 @@ nav a:hover {
 
 h2 {
   margin-bottom: 20px;
-  font-size: 2.2rem;
+  font-size: 22px;
 }
 
 main {
@@ -165,7 +165,7 @@ section {
 
 p {
   color: #6b7c93;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 2.2rem;
   font-weight: 500;
 }
@@ -250,7 +250,7 @@ section a:visited {
 }
 
 .client-libs h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .title {
@@ -266,7 +266,7 @@ h3.title a {
 }
 
 .uppercase {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 26px;
   font-weight: 600;
   text-transform: uppercase;
@@ -290,7 +290,7 @@ a.button:hover {
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
