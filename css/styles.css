@@ -148,35 +148,8 @@ h2:first-of-type {
 
 main {
   padding: 0 10px;
-}
-
-.stripes {
-  position: absolute;
-  width: 100%;
-  transform: skewY(-12deg);
-  height: 950px;
-  top: -350px;
-  background: linear-gradient(180deg, rgba(230, 235, 241, 0), #e6ebf1 350px);
-}
-
-.stripes .stripe {
-  position: absolute;
-  height: 190px;
-}
-
-.stripes .s1 {
-  height: 380px;
-  top: 0;
-  left: 0;
-  width: 24%;
-  background: linear-gradient(90deg, #e6ebf1, rgba(230, 235, 241, 0));
-}
-
-.stripes .s2 {
-  top: 380px;
-  right: 0;
-  width: 38%;
-  background: linear-gradient(90deg, #e4e9f0, rgba(228, 233, 240, 0));
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
 section {
