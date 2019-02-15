@@ -136,6 +136,8 @@ h2:first-of-type {
 
 main {
   padding: 0 10px;
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
 .stripes {
