@@ -361,6 +361,7 @@ a.button:hover {
   display: inline;
   padding: 0 15px 0 0;
   font-size: 1.7rem;
+  line-height: 2.6rem;
 }
 
 .collect-email {
@@ -482,7 +483,7 @@ a.button:hover {
   .tools a,
   .signup-success section,
   .newsletter {
-    padding: 20px;
+    padding: 30px;
   }
 
   .tools a,
@@ -512,7 +513,6 @@ a.button:hover {
   .archive {
     padding: 0;
     padding-top: 25px;
-    border-top: 1px solid #ccc;
   }
 
   .collect-email button {
