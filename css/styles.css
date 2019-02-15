@@ -431,8 +431,8 @@ a.button:hover {
     margin-bottom: 5px;
   }
 
-  nav a .arrow {
-    display: none;
+  nav a.arrow::after {
+    content: none;
   }
 
   .preview.typographic {
