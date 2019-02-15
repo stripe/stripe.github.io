@@ -482,14 +482,9 @@ a.button:hover {
     padding: 20px;
   }
 
-  .tools a:first-child,
-  .client-libs a:first-child {
-    margin-left: 15px;
-  }
-
-  .tools a:last-child,
-  .client-libs a:last-child {
-    margin-right: 15px;
+  .tools a,
+  .client-libs a {
+    margin: 15px 0;
   }
 
   a.button,
