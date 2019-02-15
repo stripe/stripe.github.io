@@ -198,6 +198,7 @@ section a:visited {
 .preview img {
   width: 100%;
   height: 220px;
+  object-fit: contain;
 }
 
 .preview.typographic {
