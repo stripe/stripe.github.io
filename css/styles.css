@@ -202,8 +202,36 @@ section a:visited {
   display: flex;
 }
 
+.client-libs {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.client-libs a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-libs h3 {
+  font-weight: 300;
+}
+
 .tools a,
-.client-libs a,
 .signup-success section,
 .newsletter {
   -webkit-box-flex: 1;
@@ -451,7 +479,6 @@ a.button:hover {
   }
 
   .tools a,
-  .client-libs a,
   .signup-success section,
   .newsletter {
     padding: 20px;
