@@ -431,6 +431,16 @@ a.button:hover {
     flex-direction: column;
   }
 
+  nav a {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  nav a .arrow {
+    display: none;
+  }
+
   .preview.typographic {
     margin: 0 0 15px 0; /* Reset left and right margin */
   }
@@ -444,6 +454,13 @@ a.button:hover {
     max-width: 300px;
     display: block;
     margin: 0 auto;
+  }
+
+  .tools a,
+  .client-libs a,
+  .signup-success section,
+  .newsletter {
+    padding: 20px;
   }
 
   .tools a:first-child,
@@ -461,5 +478,31 @@ a.button:hover {
   a.button:visited {
     max-width: 100%;
     text-align: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sign-up {
+    border: none;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 25px;
+  }
+
+  .archive {
+    padding: 0;
+    padding-top: 25px;
+    border-top: 1px solid #ccc;
+  }
+
+  .collect-email button {
+    font-size: 11px;
+  }
+  
+  .signup-success section {
+    height: auto;
   }
 }
