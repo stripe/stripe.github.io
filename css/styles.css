@@ -248,7 +248,7 @@ section a:visited {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: normal;
   overflow: hidden;
   padding: 30px;
   background-color: #fff;
@@ -296,7 +296,8 @@ h3.title a {
 
 .uppercase {
   font-size: 1.7rem;
-  line-height: 2.6rem;
+  line-height: 2.1rem;
+  margin-bottom: 15px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
