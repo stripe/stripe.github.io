@@ -123,8 +123,15 @@ nav a:hover {
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin: 80px 0 20px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #525f7f;
+}
+
+h2:first-of-type {
+  margin-top: 40px;
 }
 
 main {
