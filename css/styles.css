@@ -231,9 +231,18 @@ section a:visited {
   font-weight: 300;
 }
 
-.tools a,
-.signup-success section,
+h2#subscribe {
+  border-top: 2px solid #e6ebf1;
+  padding-top: 60px;
+  text-align: center;
+}
+
 .newsletter {
+  text-align: center;
+}
+
+.tools a,
+.signup-success section {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -257,12 +266,6 @@ section a:visited {
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
     0 5px 15px rgba(0, 0, 0, 0.07);
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-}
-
-.newsletter {
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0;
 }
 
 .tools a:first-child,
@@ -343,15 +346,11 @@ a.button:hover {
 
 .archive,
 .sign-up {
-  padding: 20px 40px 40px 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 .sign-up {
   flex: 0 0 50%;
-  padding-left: 0px;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #ccc;
 }
 
 .sign-up form {
@@ -359,7 +358,8 @@ a.button:hover {
 }
 
 .archive li {
-  margin-top: 15px;
+  display: inline;
+  padding: 0 15px 0 0;
   font-size: 1.7rem;
 }
 
@@ -382,6 +382,7 @@ a.button:hover {
   font-size: 16px;
   line-height: 22px;
   color: #32325d;
+  margin: 20px auto
 }
 
 .collect-email input {
