@@ -4,6 +4,12 @@
     format("woff2");
 }
 
+@font-face {
+  font-family: "StripeIcons";
+  src: url("https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2")
+    format("woff2");
+}
+
 * {
   box-sizing: border-box;
 }
