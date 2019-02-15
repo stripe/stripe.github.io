@@ -113,9 +113,15 @@ nav a {
   margin-left: 40px;
   cursor: pointer;
   font-size: 1.7rem;
+  font-weight: 500;
   text-decoration: none;
-  color: #6772e5;
-  font-weight: 600;
+  color: #6b7c93;
+}
+
+nav a.arrow::after {
+  font: normal 16px StripeIcons;
+  content: "\279E";
+  padding-left: 6px;
 }
 
 nav a:hover {
@@ -136,8 +142,6 @@ h2:first-of-type {
 
 main {
   padding: 0 10px;
-  max-width: 1146px;
-  margin: 0 auto;
 }
 
 .stripes {
@@ -510,7 +514,7 @@ a.button:hover {
   .collect-email button {
     font-size: 11px;
   }
-  
+
   .signup-success section {
     height: auto;
   }
