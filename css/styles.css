@@ -319,7 +319,7 @@ a.button:hover {
     0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.archive, 
+.archive,
 .sign-up {
   padding: 20px 40px 40px 40px;
 }
@@ -330,7 +330,6 @@ a.button:hover {
   padding-right: 20px;
   margin-right: 20px;
   border-right: 1px solid #ccc;
-
 }
 
 .sign-up form {
@@ -351,15 +350,16 @@ a.button:hover {
   transition: box-shadow 0.15s ease;
   transition: box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
   background: #fff;
-  -webkit-box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
-  box-shadow: 0 2px 5px -1px rgba(50,50,93,.25), 0 1px 3px -1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   overflow: hidden;
   max-width: 440px;
   font-size: 16px;
   line-height: 22px;
   color: #32325d;
-
 }
 
 .collect-email input {
@@ -441,7 +441,7 @@ a.button:hover {
   }
 
   .preview img {
-    width: 300px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
   }
