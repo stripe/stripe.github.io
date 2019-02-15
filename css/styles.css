@@ -293,8 +293,9 @@ a.button:hover {
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  font-size: 1.7rem;
+  font-size: 15px;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   text-decoration: none;
@@ -307,9 +308,9 @@ a.button:hover {
 
 a.button:hover {
   transform: translateY(-1px);
-  box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11),
-    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  background: #7795f8;
 }
 
 .archive,
