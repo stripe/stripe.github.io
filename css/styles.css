@@ -177,7 +177,7 @@ section a:visited {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  padding: 20px;
+  padding: 10px 30px 30px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -465,16 +465,16 @@ a.button:hover {
   }
 
   .preview.typographic {
-    margin: 0 0 15px 0; /* Reset left and right margin */
+    margin: 15px 0; /* Reset left and right margin */
   }
   .preview {
-    margin-bottom: 15px;
+    margin: 15px 0;
     min-height: 500px;
     max-width: 100%;
   }
 
   .preview img {
-    max-width: 300px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
   }
