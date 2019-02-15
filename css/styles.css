@@ -70,7 +70,7 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
+  background: #f6f9fc;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -91,7 +91,6 @@ html {
   font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
-  background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
 }
 
 .container {
