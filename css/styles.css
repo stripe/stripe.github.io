@@ -203,7 +203,7 @@ section a:visited {
 .preview {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: normal;
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
