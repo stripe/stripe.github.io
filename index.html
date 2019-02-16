@@ -23,9 +23,12 @@
 </head>
 
 <body id="root">
-    <div class="stripes">
-        <div class="stripe s1"></div>
-        <div class="stripe s2"></div>
+    <div class="stripes-container">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
     </div>
     <div class="container">
         <header>
@@ -34,7 +37,7 @@
                 <a href="https://stripe.com/docs" target="_blank">Docs</a>
                 <a href="https://stripe.com/blog" target="_blank">Blog</a>
                 <a href="https://stripe.com/open-source" target="_blank">Open source</a>
-                <a href="https://dashboard.stripe.com/register" target="_blank">Create account <span class="arrow"> ➞</span></a>
+                <a href="https://dashboard.stripe.com/register" class="arrow" target="_blank">Create account</a>
             </nav>
         </header>
         <main>
@@ -84,7 +87,7 @@
                     <p>
                         <a href="http://rocketrides.io/" target="_blank">Rocket Rides</a> is an example marketplace using
                         <a href="https://stripe.com/connect" target="_blank">Stripe Connect</a>. The demo application shows how you to quickly onboard users to your platform
-                        and allow them to collect payments. It uses pre-built UI components to get up and running quickly
+                        and let them collect payments. It uses pre-built UI components to get up and running quickly
                         while still enabling you to customize the user experience.
                     </p>
                     <a href="https://github.com/stripe/stripe-connect-rocketrides" class="button" target="_blank">Get the code</a>
@@ -160,11 +163,12 @@
                     </svg><div>Android</div></h3>
                 </a>
             </section>
-            <h2>Developer digest</h2>
+
+            <h2 id="subscribe">Developer digest</h2>
             <section class="newsletter">
                 <div class="sign-up">
-                    <p>Sign up to get notified about API or developer updates:</p>
-                    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AA537E78261C7C48822C3A87F8D7A34BE7920FE3F2CF4E4AD00E102A557A59454D647D4CEFD33138256ADB6BB11AF1504">	
+                    <p>We’ll send you updates about Stripe's API and developer platform:</p>
+                    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AA537E78261C7C48822C3A87F8D7A34BE7920FE3F2CF4E4AD00E102A557A59454D647D4CEFD33138256ADB6BB11AF1504">
                         <div class="collect-email">
                             <input id="fieldEmail" placeholder="Email" name="cm-zuliju-zuliju" type="email" class="js-cm-email-input"
                             required />
@@ -173,8 +177,8 @@
                         </form>
                 </div>
                 <div class="archive">
-                    <p>Browse our collection of past digests:</p>
                     <ul>
+                    	<li>Archives:</li>
                         <li><a href="https://stripemail.createsend.com/campaigns/reports/viewCampaign.aspx?d=d&c=7CA158CD0A57402E&ID=ADA3E1BAB85DEDCA2540EF23F30FEDED&temp=False&tx=0" target="_blank">November 2018</a></li>
                         <li><a href="https://stripemail.createsend.com/campaigns/reports/viewCampaign.aspx?d=d&c=7CA158CD0A57402E&ID=A3C45E8E583601BC2540EF23F30FEDED&temp=False&tx=0" target="_blank">August 2018</a></li>
                         <li><a href="https://stripemail.createsend.com/campaigns/reports/viewCampaign.aspx?d=d&c=7CA158CD0A57402E&ID=ADA3E1BAB85DEDCA2540EF23F30FEDED&temp=False&tx=0" target="_blank">June 2018</a></li>
@@ -194,7 +198,7 @@
         }
 
         document.head.appendChild(script);
-        })()    
+        })()
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12675062-6"></script>
     <script>
