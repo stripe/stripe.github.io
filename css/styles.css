@@ -70,7 +70,7 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
+  background: #f6f9fc;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -92,7 +92,6 @@ html {
   font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
-  background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
 }
 
 .stripes-container {
@@ -219,7 +218,7 @@ section a:visited {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  padding: 20px;
+  padding: 10px 30px 30px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -404,6 +403,7 @@ a.button:hover {
   display: inline;
   padding: 0 15px 0 0;
   font-size: 1.7rem;
+  line-height: 2.6rem;
 }
 
 .collect-email {
@@ -512,16 +512,16 @@ a.button:hover {
   }
 
   .preview.typographic {
-    margin: 0 0 15px 0; /* Reset left and right margin */
+    margin: 15px 0; /* Reset left and right margin */
   }
   .preview {
-    margin-bottom: 15px;
+    margin: 15px 0;
     min-height: 500px;
     max-width: 100%;
   }
 
   .preview img {
-    max-width: 300px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
   }
@@ -529,7 +529,7 @@ a.button:hover {
   .tools a,
   .signup-success section,
   .newsletter {
-    padding: 20px;
+    padding: 30px;
   }
 
   .tools a,
@@ -559,7 +559,6 @@ a.button:hover {
   .archive {
     padding: 0;
     padding-top: 25px;
-    border-top: 1px solid #ccc;
   }
 
   .collect-email button {
