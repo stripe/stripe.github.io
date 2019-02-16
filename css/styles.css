@@ -88,6 +88,46 @@ html {
   background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
 }
 
+.stripes-container {
+  position: absolute;
+  min-height: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(25, 4%);
+  grid-template-rows: repeat(25, 4%);
+  transform: skewY(-12deg);
+}
+
+.stripe:nth-child(1) {
+  background-color: #e6ebf1;
+  grid-row: 5;
+  grid-column: 1 / 3;  
+}
+
+.stripe:nth-child(2) {
+  grid-row: 6;
+  grid-column: 1/8;  
+  background-color: #43458b;
+}
+
+.stripe:nth-child(3) {
+  grid-row: 7;
+  grid-column: 24 / 26;
+  background-color: #6772e5;
+}
+
+.stripe:nth-child(4) {
+  background-color: #e6ebf1;
+  grid-row: 8;
+  grid-column: 21 / 26;
+}
+
+.stripe:nth-child(5) {
+  box-shadow: inset 0 0 0 1.5px #e6ebf1;
+  grid-row: 9;
+  grid-column: 21 / 25;
+}
+
 .container {
   padding: 30px;
   z-index: 5;
