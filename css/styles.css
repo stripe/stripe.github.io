@@ -5,6 +5,13 @@
 }
 
 @font-face {
+  font-family: "Camphor Medium";
+  src: url("https://storage.googleapis.com/stripe-fonts/500-medium.woff2")
+    format("woff2");
+}
+
+
+@font-face {
   font-family: "StripeIcons";
   src: url("https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2")
     format("woff2");
@@ -159,7 +166,7 @@ nav a {
   margin-left: 40px;
   cursor: pointer;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-family: 'Camphor Medium', Segoe UI, sans-serif;
   text-decoration: none;
   color: #6b7c93;
 }
@@ -211,13 +218,14 @@ p {
 section a,
 section a:visited {
   color: #6772e5;
+  font-weight: 500;
 }
 
 .preview {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  padding: 10px 30px 30px;
+  padding: 30px 30px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -327,7 +335,7 @@ h2#subscribe {
 }
 
 .title {
-  margin: 15px 0;
+  margin-bottom: 15px;
   font-size: 1.7rem;
   line-height: 2.6rem;
   font-weight: 600;
