@@ -206,7 +206,8 @@ p {
   color: #6b7c93;
   font-size: 1.7rem;
   line-height: 2.4rem;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Camphor", Segoe UI, sans-serif;
 }
 
 .demos {
@@ -349,7 +350,8 @@ h3.title a {
   font-size: 1.7rem;
   line-height: 2.1rem;
   margin-bottom: 15px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Camphor Medium', Segoe UI, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
