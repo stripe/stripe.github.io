@@ -166,7 +166,6 @@ nav a {
   margin-left: 40px;
   cursor: pointer;
   font-size: 1.7rem;
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
   text-decoration: none;
   color: #6b7c93;
 }
@@ -218,7 +217,7 @@ p {
 section a,
 section a:visited {
   color: #6772e5;
-  font-weight: 500;
+  font-family: 'Camphor Medium', Segoe UI, sans-serif;
 }
 
 .preview {
@@ -237,7 +236,6 @@ section a:visited {
 
 .preview img {
   width: 100%;
-  height: 220px;
   object-fit: contain;
 }
 
@@ -276,7 +274,7 @@ section a:visited {
 }
 
 .client-libs h3 {
-  font-weight: 300;
+  font-family: 'Camphor Medium', Segoe UI, sans-serif;
 }
 
 h2#subscribe {
@@ -335,7 +333,7 @@ h2#subscribe {
 }
 
 .title {
-  margin-bottom: 15px;
+  margin: 15px 0px;  
   font-size: 1.7rem;
   line-height: 2.6rem;
   font-weight: 600;
