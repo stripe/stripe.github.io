@@ -382,6 +382,8 @@ a.button:hover {
   background: #6772e5;
   max-width: 150px;
   margin-top: 30px;
+  position: absolute;
+  bottom: 40px;
 }
 
 a.button:hover {
@@ -521,9 +523,10 @@ a.button:hover {
   .preview.typographic {
     margin: 15px 0; /* Reset left and right margin */
   }
+  
   .preview {
     margin: 15px 0;
-    min-height: 500px;
+    min-height: 550px;
     max-width: 100%;
   }
 
