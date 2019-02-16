@@ -409,6 +409,7 @@ a.button:hover {
 .archive li {
   display: inline;
   padding: 0 15px 0 0;
+  white-space: nowrap;
   font-size: 1.7rem;
   line-height: 2.6rem;
 }
