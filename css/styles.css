@@ -4,6 +4,12 @@
     format("woff2");
 }
 
+@font-face {
+  font-family: "StripeIcons";
+  src: url("https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2")
+    format("woff2");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -64,7 +70,7 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
+  background: #f6f9fc;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -78,6 +84,7 @@ body {
   text-rendering: optimizeLegibility;
   font-feature-settings: "pnum";
   font-variant-numeric: proportional-nums;
+  position: relative;
 }
 
 body,
@@ -85,8 +92,48 @@ html {
   font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
-  background: linear-gradient(180deg, rgba(230, 235, 241, 0), #f6f9fc 350px);
 }
+
+.stripes-container {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(25, 4%);
+  grid-template-rows: repeat(25, 4%);
+  transform: skewY(-12deg);
+}
+
+.stripe:nth-child(1) {
+  background-color: #e6ebf1;
+  grid-row: 5;
+  grid-column: 1 / 3;  
+}
+
+.stripe:nth-child(2) {
+  grid-row: 6;
+  grid-column: 1/8;  
+  background-color: #43458b;
+}
+
+.stripe:nth-child(3) {
+  grid-row: 5;
+  grid-column: 24 / 26;
+  background-color: #6772e5;
+}
+
+.stripe:nth-child(4) {
+  background-color: #e6ebf1;
+  grid-row: 6;
+  grid-column: 21 / 26;
+}
+
+.stripe:nth-child(5) {
+  box-shadow: inset 0 0 0 1.5px #e6ebf1;
+  grid-row: 7;
+  grid-column: 21 / 25;
+}
+
 
 .container {
   padding: 30px;
@@ -113,9 +160,15 @@ nav a {
   margin-left: 40px;
   cursor: pointer;
   font-size: 1.7rem;
+  font-weight: 500;
   text-decoration: none;
-  color: #6772e5;
-  font-weight: 600;
+  color: #6b7c93;
+}
+
+nav a.arrow::after {
+  font: normal 16px StripeIcons;
+  content: "\279E";
+  padding-left: 6px;
 }
 
 nav a:hover {
@@ -123,41 +176,21 @@ nav a:hover {
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin: 80px 0 20px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #525f7f;
+}
+
+h2:first-of-type {
+  margin-top: 40px;
 }
 
 main {
   padding: 0 10px;
-}
-
-.stripes {
-  position: absolute;
-  width: 100%;
-  transform: skewY(-12deg);
-  height: 950px;
-  top: -350px;
-  background: linear-gradient(180deg, rgba(230, 235, 241, 0), #e6ebf1 350px);
-}
-
-.stripes .stripe {
-  position: absolute;
-  height: 190px;
-}
-
-.stripes .s1 {
-  height: 380px;
-  top: 0;
-  left: 0;
-  width: 24%;
-  background: linear-gradient(90deg, #e6ebf1, rgba(230, 235, 241, 0));
-}
-
-.stripes .s2 {
-  top: 380px;
-  right: 0;
-  width: 38%;
-  background: linear-gradient(90deg, #e4e9f0, rgba(228, 233, 240, 0));
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
 section {
@@ -184,8 +217,8 @@ section a:visited {
 .preview {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: normal;
+  padding: 10px 30px 30px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
@@ -210,10 +243,47 @@ section a:visited {
   display: flex;
 }
 
-.tools a,
-.client-libs a,
-.signup-success section,
+.client-libs {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.client-libs a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-libs h3 {
+  font-weight: 300;
+}
+
+h2#subscribe {
+  border-top: 2px solid #e6ebf1;
+  padding-top: 60px;
+  text-align: center;
+}
+
 .newsletter {
+  text-align: center;
+}
+
+.tools a,
+.signup-success section {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -229,7 +299,7 @@ section a:visited {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: normal;
   overflow: hidden;
   padding: 30px;
   background-color: #fff;
@@ -237,12 +307,6 @@ section a:visited {
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
     0 5px 15px rgba(0, 0, 0, 0.07);
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-}
-
-.newsletter {
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0;
 }
 
 .tools a:first-child,
@@ -277,7 +341,8 @@ h3.title a {
 
 .uppercase {
   font-size: 1.7rem;
-  line-height: 2.6rem;
+  line-height: 2.1rem;
+  margin-bottom: 15px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -300,8 +365,9 @@ a.button:hover {
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
-  font-size: 1.7rem;
+  font-size: 15px;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   text-decoration: none;
@@ -314,22 +380,19 @@ a.button:hover {
 
 a.button:hover {
   transform: translateY(-1px);
-  box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 2px 6px 8px rgba(50, 50, 93, 0.11),
-    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+    0 3px 6px rgba(0, 0, 0, 0.08);
+  background: #7795f8;
 }
 
 .archive,
 .sign-up {
-  padding: 20px 40px 40px 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 .sign-up {
   flex: 0 0 50%;
-  padding-left: 0px;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #ccc;
 }
 
 .sign-up form {
@@ -337,8 +400,10 @@ a.button:hover {
 }
 
 .archive li {
-  margin-top: 15px;
+  display: inline;
+  padding: 0 15px 0 0;
   font-size: 1.7rem;
+  line-height: 2.6rem;
 }
 
 .collect-email {
@@ -360,6 +425,7 @@ a.button:hover {
   font-size: 16px;
   line-height: 22px;
   color: #32325d;
+  margin: 20px auto;
 }
 
 .collect-email input {
@@ -431,46 +497,44 @@ a.button:hover {
     flex-direction: column;
   }
 
+  .stripes-container {
+    display: none;
+  }
+
   nav a {
     display: block;
     text-align: right;
     margin-bottom: 5px;
   }
 
-  nav a .arrow {
-    display: none;
+  nav a.arrow::after {
+    content: none;
   }
 
   .preview.typographic {
-    margin: 0 0 15px 0; /* Reset left and right margin */
+    margin: 15px 0; /* Reset left and right margin */
   }
   .preview {
-    margin-bottom: 15px;
+    margin: 15px 0;
     min-height: 500px;
     max-width: 100%;
   }
 
   .preview img {
-    max-width: 300px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
   }
 
   .tools a,
-  .client-libs a,
   .signup-success section,
   .newsletter {
-    padding: 20px;
+    padding: 30px;
   }
 
-  .tools a:first-child,
-  .client-libs a:first-child {
-    margin-left: 15px;
-  }
-
-  .tools a:last-child,
-  .client-libs a:last-child {
-    margin-right: 15px;
+  .tools a,
+  .client-libs a {
+    margin: 15px 0;
   }
 
   a.button,
@@ -495,13 +559,12 @@ a.button:hover {
   .archive {
     padding: 0;
     padding-top: 25px;
-    border-top: 1px solid #ccc;
   }
 
   .collect-email button {
     font-size: 11px;
   }
-  
+
   .signup-success section {
     height: auto;
   }
