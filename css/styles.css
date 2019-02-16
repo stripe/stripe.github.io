@@ -275,6 +275,7 @@ section a:visited {
 
 .client-libs h3 {
   font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-weight: 500;
 }
 
 h2#subscribe {
