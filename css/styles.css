@@ -289,12 +289,11 @@ h2#subscribe {
   text-align: center;
 }
 
-.tools a,
-.signup-success section {
+.tools a {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  margin: 15px;
+  margin: 0px 15px 15px 15px;
   z-index: 499;
   position: relative;
   display: -webkit-box;
@@ -350,7 +349,7 @@ h3.title a {
   font-size: 1.7rem;
   line-height: 2.1rem;
   margin-bottom: 15px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Camphor Medium', Segoe UI, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -488,16 +487,30 @@ a.button:hover {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 22px 0;
+  background: #f7f8f9;
+  border-radius: 5px;
+  border: none;
 }
 
 .signup-success section {
-  max-width: 600px;
+  max-width: 400px;
   height: 200px;
+  text-align: center;
+}
+
+.signup-success .bold {
+  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-weight: 600;
+}
+
+.signup-success img {
+  margin-bottom: 10px;
 }
 
 .signup-success p {
-  font-size: 2.2rem;
-  line-height: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   margin-bottom: 10px;
 }
 
