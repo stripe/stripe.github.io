@@ -483,18 +483,6 @@ a.button:hover {
   transform: translateY(-1px);
 }
 
-.collect-email-error {
-  display: none;
-  font-size: 16px;
-  line-height: 22px;
-  color: #32325d;
-  margin: 20px auto;
-}
-
-.collect-email-error.visible {
-  display: block;
-}
-
 .signup-success {
   display: flex;
   justify-content: center;
