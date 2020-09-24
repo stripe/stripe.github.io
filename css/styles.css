@@ -1,16 +1,19 @@
 @font-face {
-  font-family: 'Camphor';
-  src: url('https://storage.googleapis.com/stripe-fonts/400-regular.woff2') format('woff2');
+  font-family: "Camphor";
+  src: url("https://storage.googleapis.com/stripe-fonts/400-regular.woff2")
+    format("woff2");
 }
 
 @font-face {
-  font-family: 'Camphor Medium';
-  src: url('https://storage.googleapis.com/stripe-fonts/500-medium.woff2') format('woff2');
+  font-family: "Camphor Medium";
+  src: url("https://storage.googleapis.com/stripe-fonts/500-medium.woff2")
+    format("woff2");
 }
 
 @font-face {
-  font-family: 'StripeIcons';
-  src: url('https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2') format('woff2');
+  font-family: "StripeIcons";
+  src: url("https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2")
+    format("woff2");
 }
 
 * {
@@ -38,7 +41,8 @@ ul {
 }
 
 ol,
-ul {}
+ul {
+}
 
 a {
   text-decoration: none;
@@ -76,21 +80,21 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: 'Camphor', Segoe UI, sans-serif;
+  font-family: "Camphor", Segoe UI, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'pnum';
+  font-feature-settings: "pnum";
   font-variant-numeric: proportional-nums;
   position: relative;
 }
 
 body,
 html {
-  font-family: 'Camphor', sans-serif;
+  font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
 }
@@ -166,7 +170,7 @@ nav a {
 
 nav a.arrow::after {
   font: normal 16px StripeIcons;
-  content: '\279E';
+  content: "\279E";
   padding-left: 6px;
 }
 
@@ -202,7 +206,7 @@ li {
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-weight: 400;
-  font-family: 'Camphor', Segoe UI, sans-serif;
+  font-family: "Camphor", Segoe UI, sans-serif;
 }
 
 li {
@@ -224,7 +228,7 @@ ul {
 section a,
 section a:visited {
   color: #6772e5;
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
 }
 
 .preview {
@@ -281,7 +285,7 @@ section a:visited {
 }
 
 .client-libs h3 {
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   font-weight: 500;
 }
 
@@ -356,7 +360,7 @@ h3.title a {
   line-height: 2.1rem;
   margin-bottom: 15px;
   font-weight: 600;
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -513,7 +517,7 @@ a.button:hover {
 }
 
 .signup-success .bold {
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   font-weight: 600;
 }
 
@@ -527,8 +531,11 @@ a.button:hover {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
+img.social-icon {
+  width: 22px;
+}
 
+@media (max-width: 1024px) {
   .demos,
   .tools,
   .client-libs {
