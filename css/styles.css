@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Camphor';
-  src: url('https://storage.googleapis.com/stripe-fonts/400-regular.woff2')
-    format('woff2');
+  font-family: "Camphor";
+  src: url("https://storage.googleapis.com/stripe-fonts/400-regular.woff2")
+    format("woff2");
 }
 
 @font-face {
-  font-family: 'Camphor Medium';
-  src: url('https://storage.googleapis.com/stripe-fonts/500-medium.woff2')
-    format('woff2');
+  font-family: "Camphor Medium";
+  src: url("https://storage.googleapis.com/stripe-fonts/500-medium.woff2")
+    format("woff2");
 }
 
 @font-face {
-  font-family: 'StripeIcons';
-  src: url('https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2')
-    format('woff2');
+  font-family: "StripeIcons";
+  src: url("https://storage.googleapis.com/stripe-fonts/stripe-icons.woff2")
+    format("woff2");
 }
 
 * {
@@ -42,7 +42,6 @@ ul {
 
 ol,
 ul {
-  list-style: none;
 }
 
 a {
@@ -81,21 +80,21 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: 'Camphor', Segoe UI, sans-serif;
+  font-family: "Camphor", Segoe UI, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'pnum';
+  font-feature-settings: "pnum";
   font-variant-numeric: proportional-nums;
   position: relative;
 }
 
 body,
 html {
-  font-family: 'Camphor', sans-serif;
+  font-family: "Camphor", sans-serif;
   color: #32325d;
   min-height: 100%;
 }
@@ -171,7 +170,7 @@ nav a {
 
 nav a.arrow::after {
   font: normal 16px StripeIcons;
-  content: '\279E';
+  content: "\279E";
   padding-left: 6px;
 }
 
@@ -201,12 +200,24 @@ section {
   margin-bottom: 40px;
 }
 
-p {
+p,
+li {
   color: #6b7c93;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-weight: 400;
-  font-family: 'Camphor', Segoe UI, sans-serif;
+  font-family: "Camphor", Segoe UI, sans-serif;
+}
+
+li {
+  list-style-type: disc;
+  margin-left: 12px;
+  line-height: 2.8rem;
+}
+
+ul {
+  margin: 10px 0px;
+  display: block;
 }
 
 .demos {
@@ -217,7 +228,7 @@ p {
 section a,
 section a:visited {
   color: #6772e5;
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
 }
 
 .preview {
@@ -230,7 +241,7 @@ section a:visited {
   -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
     0 5px 15px rgba(0, 0, 0, 0.07);
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  min-height: 580px;
+  min-height: 660px;
   position: relative;
 }
 
@@ -274,7 +285,7 @@ section a:visited {
 }
 
 .client-libs h3 {
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   font-weight: 500;
 }
 
@@ -349,7 +360,7 @@ h3.title a {
   line-height: 2.1rem;
   margin-bottom: 15px;
   font-weight: 600;
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -363,7 +374,7 @@ a.button,
 a.button:visited,
 a.button:hover {
   white-space: nowrap;
-  display: inline-block;
+  display: block;
   height: 40px;
   line-height: 40px;
   padding: 0 14px;
@@ -380,10 +391,10 @@ a.button:hover {
   transition: all 0.15s ease;
   color: #fff;
   background: #6772e5;
-  max-width: 150px;
+  max-width: 180px;
   margin-top: 30px;
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
 }
 
 a.button:hover {
@@ -506,7 +517,7 @@ a.button:hover {
 }
 
 .signup-success .bold {
-  font-family: 'Camphor Medium', Segoe UI, sans-serif;
+  font-family: "Camphor Medium", Segoe UI, sans-serif;
   font-weight: 600;
 }
 
@@ -520,7 +531,11 @@ a.button:hover {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+img.social-icon {
+  width: 22px;
+}
+
+@media (max-width: 1024px) {
   .demos,
   .tools,
   .client-libs {
@@ -542,12 +557,13 @@ a.button:hover {
   }
 
   .preview.typographic {
-    margin: 15px 0; /* Reset left and right margin */
+    margin: 15px 0;
+    /* Reset left and right margin */
   }
 
   .preview {
     margin: 15px 0;
-    min-height: 640px;
+    min-height: 600px;
     max-width: 100%;
   }
 
@@ -572,6 +588,8 @@ a.button:hover {
   a.button:hover,
   a.button:visited {
     max-width: 100%;
+    min-width: 90%;
+    margin: 0 auto;
     text-align: center;
   }
 
