@@ -152,11 +152,7 @@ nav a {
   color: #6b7c93;
 }
 
-nav a.arrow::after {
-  font: normal 16px StripeIcons;
-  content: "\279E";
-  padding-left: 6px;
-}
+
 
 nav a:hover {
   color: #32325d;
