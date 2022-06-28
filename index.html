@@ -394,6 +394,7 @@
                     errorContainer.classList
                         .add('visible');
                 }
+                request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
                 request.send(new FormData(form));
             });
         })();
