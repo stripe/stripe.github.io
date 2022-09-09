@@ -78,6 +78,7 @@ export default function Home() {
                       src={p.cover_image}
                       className={styles.img}
                     />
+
                     <p className="post-title">{p.title}</p>
                     <p className="date">
                       {new Date(p.published_at).toLocaleDateString("en-US", {
@@ -105,7 +106,11 @@ export default function Home() {
         <h2>Developer essentials</h2>
         <section className="demos">
           <div className="preview">
-            <a href="https://stripe.com/docs/stripe-cli" target="_blank">
+            <a
+              href="https://stripe.com/docs/stripe-cli"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="/images/stripe-cli.png" alt="Homepage of Payments" />
             </a>
             <h3 className="title">
@@ -113,6 +118,7 @@ export default function Home() {
                 href="https://stripe.com/docs/stripe-cli"
                 className="uppercase"
                 target="_blank"
+                rel="noreferrer"
               >
                 Stripe Command Line (CLI)
               </a>
@@ -147,6 +153,7 @@ export default function Home() {
               href="https://stripe.com/docs/stripe-cli"
               className="button"
               target="_blank"
+              rel="noreferrer"
             >
               Install the CLI
             </a>
@@ -158,6 +165,7 @@ export default function Home() {
                 src="/images/docs.png"
                 alt="Stripe documentation"
                 target="_blank"
+                rel="noreferrer"
               />
             </a>
             <h3 className="title">
@@ -165,6 +173,7 @@ export default function Home() {
                 href="https://stripe.com/docs/"
                 className="uppercase"
                 target="_blank"
+                rel="noreferrer"
               >
                 Documentation
               </a>
@@ -198,13 +207,18 @@ export default function Home() {
               href="https://stripe.com/docs/"
               className="button"
               target="_blank"
+              rel="noreferrer"
             >
               Read the docs
             </a>
           </div>
 
           <div className="preview">
-            <a href="https://github.com/stripe-samples" target="_blank">
+            <a
+              href="https://github.com/stripe-samples"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src="/images/samples.png" alt="Stripe samples" />
             </a>
             <h3 className="title">
@@ -212,6 +226,7 @@ export default function Home() {
                 href="https://github.com/stripe-samples"
                 className="uppercase"
                 target="_blank"
+                rel="noreferrer"
               >
                 Stripe samples
               </a>
@@ -248,6 +263,7 @@ export default function Home() {
               href="https://github.com/stripe-samples"
               className="button"
               target="_blank"
+              rel="noreferrer"
             >
               Explore samples
             </a>
@@ -259,6 +275,7 @@ export default function Home() {
           <a
             href="https://stripe.com/docs/development/quickstart"
             target="_blank"
+            rel="noreferrer"
           >
             <h3 className="uppercase">Development quickstart</h3>
             <p>
@@ -269,6 +286,7 @@ export default function Home() {
           <a
             href="https://stripe.com/docs/payments/integration-builder"
             target="_blank"
+            rel="noreferrer"
           >
             <h3 className="uppercase">Integration builder</h3>
             <p>
@@ -276,19 +294,31 @@ export default function Home() {
               application.
             </p>
           </a>
-          <a href="https://stripe.com/docs/api" target="_blank">
+          <a
+            href="https://stripe.com/docs/api"
+            target="_blank"
+            rel="noreferrer"
+          >
             <h3 className="uppercase">API reference</h3>
             <p>
               View all backend API objects, methods, attributes, and responses.
             </p>
           </a>
-          <a href="https://checkout.stripe.dev/" target="_blank">
+          <a
+            href="https://checkout.stripe.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <h3 className="uppercase">Checkout demo</h3>
             <p>
               Choose your use case for a secure, Stripe-hosted payment page.
             </p>
           </a>
-          <a href="https://www.youtube.com/stripedevelopers" target="_blank">
+          <a
+            href="https://www.youtube.com/stripedevelopers"
+            target="_blank"
+            rel="noreferrer"
+          >
             <h3 className="uppercase">YouTube tutorials</h3>
             <p>
               Watch engineers walk through code examples and developer product
@@ -316,7 +346,11 @@ export default function Home() {
                 Subscribe to the Stripe Developer Digest
               </a>
               , and read recent issues on{" "}
-              <a href="https://dev.to/t/stripedevdigest" target="_blank">
+              <a
+                href="https://dev.to/t/stripedevdigest"
+                target="_blank"
+                rel="noreferrer"
+              >
                 dev.to
               </a>
             </p>
