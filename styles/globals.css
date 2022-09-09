@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #f6f9fc;
+  color: #32325d;
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  z-index: 5;
+  position: relative;
+}
+img.avatar {
+  width: 25px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
