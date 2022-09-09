@@ -337,7 +337,7 @@ export default function Home() {
           <div className="sign-up">
             <p>
               Stay up to date with the latest from Stripe’s API and developer
-              products:
+              products:{" "}
               <a
                 href="https://go.stripe.global/dev-digest"
                 target="_blank"
