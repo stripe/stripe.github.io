@@ -279,6 +279,12 @@ h2#subscribe {
   text-align: center;
 }
 
+.newsletter .sign-up {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .tools a {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
