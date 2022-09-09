@@ -524,7 +524,8 @@ img.social-icon {
   .demos,
   .tools,
   .client-libs {
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
   }
 
   .stripes-container {
@@ -567,6 +568,12 @@ img.social-icon {
   .tools a,
   .client-libs a {
     margin: 15px 0;
+  }
+  .client-libs a {
+    display: inline-flex;
+    flex: auto;
+    flex-direction: none;
+    width: 30%;
   }
 
   a.button,
