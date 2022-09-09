@@ -26,12 +26,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Stripe Developer Resources</title>
-        <link
-          href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
-          rel="stylesheet"
-        />
         <link rel="shortcut icon" href="favicon.ico" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <meta property="og:title" content="Stripe Developer Resources" />
@@ -75,9 +71,13 @@ export default function Home() {
           {latestPosts &&
             latestPosts.map((p, i) => {
               return (
-                <a href={p.url} className="post-container">
-                  <div className="post" key={i}>
-                    <img src={p.cover_image} className={styles.img} />
+                <a href={p.url} key={i} className="post-container">
+                  <div className="post">
+                    <img
+                      alt={`${p.title}`}
+                      src={p.cover_image}
+                      className={styles.img}
+                    />
                     <p className="post-title">{p.title}</p>
                     <p className="date">
                       {new Date(p.published_at).toLocaleDateString("en-US", {
@@ -87,7 +87,11 @@ export default function Home() {
                         day: "numeric",
                       })}
                     </p>
-                    <img className="avatar" src={p.user.profile_image} />
+                    <img
+                      alt={`${p.user.name} profile picture`}
+                      className="avatar"
+                      src={p.user.profile_image}
+                    />
                     <span className="username">{p.user.name}</span>
                   </div>
                 </a>
