@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stripe Resources</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body id="root">
+    <div class="stripes">
+      <div class="stripe s1"></div>
+      <div class="stripe s2"></div>
+    </div>
+    <div class="container">
+      <header>
+        <a href="https://www.stripe.com" target="_blank"
+          ><img src="images/stripe-logo.svg" alt="Stripe logo"
+        /></a>
+        <nav>
+          <a href="https://stripe.com/docs" target="_blank">Docs</a>
+          <a href="https://stripe.com/blog" target="_blank">Blog</a>
+          <a href="https://stripe.com/open-source" target="_blank"
+            >Open source</a
+          >
+          <a href="https://dashboard.stripe.com/register" target="_blank" class="arrow"
+            >Create account</a
+          >
+        </nav>
+      </header>
+      <main class="signup-success">
+        <section>
+            <img src="images/success.svg" alt="Green checkmark">
+          <p class="bold">
+              Thank you!
+
+          </p>
+          <p>
+              Check your inbox to confirm your email address and we’ll send you our next digest. 
+
+          </p>
+        </section>
+      </main>
+    </div>
+    <script>
+      (() => {
+        const script = document.createElement("script");
+        script.src = "https://js.stripe.com/internal/v2/analytics.min.js";
+        script.async = true;
+
+        script.onload = e => {
+          Analytics.viewed("stripe_github_landing_page");
+        };
+
+        document.head.appendChild(script);
+      })();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
+    ></script>
+  </body>
+</html>
