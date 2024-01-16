@@ -374,30 +374,6 @@
 
         gtag('config', 'UA-12675062-6');
     </script>
-    <script>
-        (() => {
-            const form = document.getElementById('subForm');
-            const errorContainer = document.querySelector('.js-email-error');
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                errorContainer.classList
-                    .remove('visible');
-                let request = new XMLHttpRequest;
-                request.open(form.method, form.action, !0);
-                request.onreadystatechange = () => {
-                    if (request.readyState === 4 && request.status === 204) {
-                        window.location = "/signup-success.html";
-                    }
-                }
-                request.onerror = () => {
-                    errorContainer.classList
-                        .add('visible');
-                }
-                request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-                request.send(new FormData(form));
-            });
-        })();
-    </script>
 </body>
 
 </html>
