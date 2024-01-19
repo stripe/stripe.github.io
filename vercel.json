@@ -1,4 +1,15 @@
 {
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; connect-src 'self' www.google-analytics.com q.stripe.com; img-src 'self' www.google-analytics.com q.stripe.com www.googletagmanager.com; font-src 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com; script-src 'self' www.googletagmanager.com js.stripe.com www.google-analytics.com;"
+          }
+        ]
+      }
+    ],
     "rewrites": [
         {
           "source": "/stripe-java/(.*)",
