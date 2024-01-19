@@ -14,15 +14,15 @@
         },
         {
           "source": "/scalding/(.*)",
-          "destination": "https://stripe.github.io/scalding/$1"
+          "destination": "https://github.com/stripe-archive/scalding/$1"
         },
         {
           "source": "/sequins/(.*)",
-          "destination": "https://stripe.github.io/sequins/$1"
+          "destination": "https://github.com/stripe-archive/sequins/"
         },
         {
           "source": "/veneur/(.*)",
-          "destination": "https://stripe.github.io/veneur/$1"
+          "destination": "https://github.com/stripe/veneur/"
         },
         {
           "source": "/elements-examples/(.*)",
