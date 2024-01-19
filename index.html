@@ -9,7 +9,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self';
+    connect-src 'self' www.google-analytics.com q.stripe.com;
+    img-src 'self' www.google-analytics.com q.stripe.com;
+    font-src 'self' fonts.gstatic.com;
+    style-src 'self' fonts.googleapis.com;
+    script-src 'self' www.googletagmanager.com js.stripe.com www.google-analytics.com;">
+    
     <meta property="og:title" content="Stripe Developer Resources">
     <meta property="og:url" content="https://stripe.dev">
     <meta property="og:description"
@@ -154,7 +161,7 @@
             <h2>Client libraries</h2>
             <section class="client-libs">
                 <a href="https://github.com/stripe/stripe-ruby" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="4 4 28 28" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M23.476 5.076c2.78.481 3.569 2.382 3.51 4.373L27 9.42l-1.251 16.398-16.266 1.114h.014c-1.35-.057-4.36-.18-4.497-4.388l1.508-2.75 2.584 6.037.461 1.075 2.571-8.382-.027.006.014-.028 8.484 2.71-1.28-4.978-.907-3.575 8.085-.522-.564-.467-5.804-4.732 3.354-1.871-.003.01zM9.703 9.65c3.264-3.238 7.477-5.152 9.095-3.52 1.615 1.63-.097 5.597-3.367 8.833-3.266 3.238-7.428 5.256-9.042 3.628-1.62-1.63.041-5.7 3.31-8.938l.004-.003z"
@@ -164,7 +171,7 @@
                     </h3>
                 </a>
                 <a href="https://github.com/stripe/stripe-node" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15.516 28.952a2.09 2.09 0 0 1-1.002-.263l-3.17-1.883c-.478-.262-.24-.358-.096-.405.644-.215.763-.263 1.43-.644.072-.048.167-.024.239.024l2.432 1.454c.095.048.214.048.286 0l9.513-5.507c.095-.048.143-.143.143-.263v-10.99c0-.12-.048-.215-.143-.263L15.635 4.73c-.096-.048-.215-.048-.286 0l-9.513 5.483c-.096.048-.143.167-.143.262v10.991c0 .096.047.215.143.263l2.599 1.502c1.406.715 2.288-.12 2.288-.954V11.428a.29.29 0 0 1 .286-.286h1.216a.29.29 0 0 1 .287.286v10.848c0 1.884-1.026 2.98-2.814 2.98-.548 0-.977 0-2.193-.596L5 23.23A2.012 2.012 0 0 1 4 21.49V10.497c0-.715.381-1.383 1.001-1.74l9.513-5.508a2.128 2.128 0 0 1 2.003 0l9.513 5.508a2.012 2.012 0 0 1 1.001 1.74V21.49c0 .716-.381 1.383-1.001 1.74l-9.513 5.508a2.44 2.44 0 0 1-1.001.215zm2.932-7.558c-4.172 0-5.03-1.907-5.03-3.529a.29.29 0 0 1 .286-.286h1.24c.142 0 .262.096.262.239.19 1.263.739 1.883 3.266 1.883 2.003 0 2.861-.453 2.861-1.526 0-.62-.238-1.073-3.362-1.383-2.598-.262-4.22-.834-4.22-2.908 0-1.931 1.622-3.076 4.34-3.076 3.051 0 4.553 1.05 4.744 3.338a.385.385 0 0 1-.072.215c-.047.047-.119.095-.19.095h-1.24a.28.28 0 0 1-.262-.215c-.286-1.31-1.025-1.74-2.98-1.74-2.194 0-2.456.763-2.456 1.335 0 .691.31.906 3.266 1.288 2.933.381 4.315.93 4.315 2.98-.023 2.098-1.74 3.29-4.768 3.29z"
@@ -174,7 +181,7 @@
                     </h3>
                 </a>
                 <a href="https://github.com/stripe/stripe-python" target="_blank">
-                    <div><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <div><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                             <path
                                 d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z"
@@ -187,7 +194,7 @@
                     </div>
                 </a>
                 <a href="https://github.com/stripe/stripe-java" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="0 0 256 346" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                             <path
                                 d="M82.55 267.47s-13.2 7.68 9.4 10.28c27.37 3.12 41.35 2.67 71.51-3.04 0 0 7.93 4.97 19 9.28-67.6 28.98-153.01-1.68-99.9-16.52m-8.26-37.81s-14.81 10.96 7.8 13.3c29.23 3.01 52.32 3.26 92.27-4.44 0 0 5.53 5.6 14.22 8.67-81.75 23.9-172.8 1.89-114.3-17.53"
@@ -209,7 +216,7 @@
                     </h3>
                 </a>
                 <a href="https://github.com/stripe/stripe-php" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <g fill="#6181B6" fill-rule="evenodd">
                                 <path
@@ -227,7 +234,7 @@
                     </h3>
                 </a>
                 <a href="https://github.com/stripe/stripe-go" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="2 2 30 30" xmlns="http://www.w3.org/2000/svg">
                             <g fill="#00ACD7" fill-rule="evenodd">
                                 <path
@@ -242,7 +249,7 @@
                     </h3>
                 </a>
                 <a href="https://github.com/stripe/stripe-dotnet" target="_blank">
-                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg" style="width: 24px;height: 24px;"
+                    <h3><svg class="SVGInline-svg SVG-svg LangIcon-svg"
                             viewBox="2 2 28 28" xmlns="http://www.w3.org/2000/svg">
                             <g fill="#1384C8" fill-rule="evenodd">
                                 <path
@@ -350,54 +357,8 @@
             </section>
         </main>
     </div>
-    <script>
-        (() => {
-            const script = document.createElement('script');
-            script.src = 'https://js.stripe.com/internal/v2/analytics.min.js';
-            script.async = true;
-
-            script.onload = (e) => {
-                Analytics.viewed('stripe_github_landing_page');
-            }
-
-            document.head.appendChild(script);
-        })()
-    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12675062-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-12675062-6');
-    </script>
-    <script>
-        (() => {
-            const form = document.getElementById('subForm');
-            const errorContainer = document.querySelector('.js-email-error');
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                errorContainer.classList
-                    .remove('visible');
-                let request = new XMLHttpRequest;
-                request.open(form.method, form.action, !0);
-                request.onreadystatechange = () => {
-                    if (request.readyState === 4 && request.status === 204) {
-                        window.location = "/signup-success.html";
-                    }
-                }
-                request.onerror = () => {
-                    errorContainer.classList
-                        .add('visible');
-                }
-                request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-                request.send(new FormData(form));
-            });
-        })();
-    </script>
+    <script async src="/js/script.js"></script>
 </body>
 
 </html>

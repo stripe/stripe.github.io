@@ -520,6 +520,10 @@ a.button:hover {
 img.social-icon {
   width: 22px;
 }
+svg.LangIcon-svg {
+  width: 24px;
+  height: 24px;
+}
 
 @media (max-width: 1024px) {
   .demos,
