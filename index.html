@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" 
     content="default-src 'self';
-    connect-src 'self' www.google-analytics.com q.stripe.com plausible.io;
-    img-src 'self' www.google-analytics.com q.stripe.com www.googletagmanager.com;
+    connect-src 'self' q.stripe.com plausible.io;
+    img-src 'self' q.stripe.com;
     font-src 'self' fonts.gstatic.com;
     style-src 'self' fonts.googleapis.com;
-    script-src 'self' www.googletagmanager.com js.stripe.com www.google-analytics.com plausible.io;">
+    script-src 'self' js.stripe.com plausible.io;">
     
     <meta property="og:title" content="Stripe Developer Resources">
     <meta property="og:url" content="https://stripe.dev">
@@ -357,7 +357,6 @@
             </section>
         </main>
     </div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12675062-6"></script>
     <script async src="/js/script.js"></script>
 </body>
 
