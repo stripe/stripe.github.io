@@ -33,7 +33,7 @@ export default function IndexPage() {
           <section className="demos">
             <div className="preview">
               <a href="https://stripe.com/docs/stripe-cli" target="_blank">
-                <img src="images/stripe-cli.png" alt="Homepage of Payments" />
+                <img src="images/stripe-cli.webp" alt="Homepage of Payments" />
               </a>
               <h3 className="title">
                 <a
@@ -79,7 +79,7 @@ export default function IndexPage() {
 
             <div className="preview  typographic">
               <a href="https://stripe.com/docs/" target="_blank">
-                <img src="images/docs.png" alt="Stripe documentation" />
+                <img src="images/docs.webp" alt="Stripe documentation" />
               </a>
               <h3 className="title">
                 <a
@@ -126,7 +126,7 @@ export default function IndexPage() {
 
             <div className="preview">
               <a href="https://github.com/stripe-samples" target="_blank">
-                <img src="images/samples.png" alt="Stripe samples" />
+                <img src="images/samples.webp" alt="Stripe samples" />
               </a>
               <h3 className="title">
                 <a
