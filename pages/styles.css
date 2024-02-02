@@ -124,6 +124,7 @@ html {
 .container {
   padding: 30px;
   z-index: 5;
+  position: relative;
 }
 
 h1 {
