@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feat/nextjs
 
 jobs:
   build-and-deploy:
