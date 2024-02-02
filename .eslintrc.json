@@ -6,6 +6,7 @@
     "prettier"
   ],
   "rules": {
-    "import/extensions": [0]
+    "import/extensions": [0],
+    "@next/next/no-img-element": "off"
   }
 }
