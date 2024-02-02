@@ -1,0 +1,40 @@
+
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Run yarn install
+        run: yarn install
+
+      - name: Run next build
+        run: yarn build
+
+      - name: Prepare for gh-pages deployment
+        run: |
+          touch out/.nojekyll
+          git add out/
+          git commit -m "Deploy to gh-pages"
+#      - name: Prepare for gh-pages deployment
+#        run: |
+#          touch out/.nojekyll
+#          touch out/CNAME
+#          echo "example.com" >> out/CNAME
+#          git add out/
+#          git commit -m "Deploy to gh-pages"
+
+      - name: Deploy
+        run: git subtree push --prefix out origin gh-pages
