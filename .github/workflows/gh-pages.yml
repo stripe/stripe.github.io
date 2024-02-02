@@ -27,6 +27,8 @@ jobs:
       - name: Prepare for gh-pages deployment
         run: |
           touch out/.nojekyll
+          git config --global user.email "hideokamoto@stripe.com"
+          git config --global user.name "Hidetaka Okamoto"
           git add out/
           git commit -m "Deploy to gh-pages"
 #      - name: Prepare for gh-pages deployment
