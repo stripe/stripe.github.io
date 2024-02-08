@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.79565681,2.64658215 C6.99109967,2.45113928 7.30797517,2.45113928 7.50341803,2.64658215 C7.6988609,2.84202502 7.6988609,3.15890051 7.50341803,3.35434338 L4.35355348,6.50420793 C4.15829133,6.69947008 3.84170884,6.69947008 3.6464467,6.50420793 L0.496582144,3.35434338 C0.301139277,3.15890051 0.301139277,2.84202502 0.496582144,2.64658215 C0.69202501,2.45113928 1.00890051,2.45113928 1.20434337,2.64658215 L4.00000018,5.44223896 L6.79565681,2.64658215 Z" id="path-1"></path>
+    </defs>
+    <g id="Samples-catalog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hosted-demos-v0-copy" transform="translate(-415.000000, -553.000000)">
+            <g id="Select-Dark" transform="translate(285.000000, 547.000000)">
+                <g id="Icon/chevronDown" transform="translate(130.000000, 4.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="_Elements/Icon/Color/white" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                        <rect id="Color" x="0" y="0" width="8" height="8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
