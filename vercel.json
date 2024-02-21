@@ -9,6 +9,10 @@
           "destination": "https://stripe.github.io/stripe-java/$1"
         },
         {
+          "source": "/stripe-ios",
+          "destination": "https://stripe.github.io/stripe-ios/"
+        },
+        {
           "source": "/stripe-ios/(.*)",
           "destination": "https://stripe.github.io/stripe-ios/$1"
         },
@@ -17,8 +21,12 @@
           "destination": "https://stripe.github.io/stripe-android/$1"
         },
         {
+          "source": "/scalding",
+          "destination": "https://github.com/stripe-archive/scalding/"
+        },
+        {
           "source": "/scalding/(.*)",
-          "destination": "https://github.com/stripe-archive/scalding/$1"
+          "destination": "https://github.com/stripe-archive/scalding/"
         },
         {
           "source": "/sequins/(.*)",
