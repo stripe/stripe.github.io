@@ -1,7 +1,11 @@
 {
     "rewrites": [
         {
-          "source": "/stripe-java(?:/(.*?))?",
+          "source": "/stripe-java/",
+          "destination": "https://stripe.github.io/stripe-java/"
+        },
+        {
+          "source": "/stripe-java/(.*)",
           "destination": "https://stripe.github.io/stripe-java/$1"
         },
         {
