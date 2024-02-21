@@ -1,4 +1,22 @@
 {
+    "redirects": [
+        {
+          "source": "/veneur",
+          "destination": "https://github.com/stripe/veneur/"
+        },
+        {
+          "source": "/veneur/(.*)",
+          "destination": "https://github.com/stripe/veneur/"
+        },
+        {
+          "source": "/scalding",
+          "destination": "https://github.com/stripe-archive/scalding/"
+        },
+        {
+          "source": "/scalding/(.*)",
+          "destination": "https://github.com/stripe-archive/scalding/"
+        }
+    ],
     "rewrites": [
         {
           "source": "/stripe-java",
@@ -25,28 +43,12 @@
           "destination": "https://stripe.github.io/stripe-android/$1"
         },
         {
-          "source": "/scalding",
-          "destination": "https://github.com/stripe-archive/scalding/"
-        },
-        {
-          "source": "/scalding/(.*)",
-          "destination": "https://github.com/stripe-archive/scalding/"
-        },
-        {
           "source": "/sequins",
-          "destination": "https://stripe.github.io/sequins/"
+          "destination": "https://github.com/stripe-archive/sequins/"
         },
         {
           "source": "/sequins/(.*)",
-          "destination": "https://stripe.github.io/sequins/$1"
-        },
-        {
-          "source": "/veneur",
-          "destination": "https://stripe.github.io/veneur/"
-        },
-        {
-          "source": "/veneur/(.*)",
-          "destination": "https://stripe.github.io/veneur/$1"
+          "destination": "https://github.com/stripe-archive/sequins/"
         },
         {
           "source": "/elements-examples",
