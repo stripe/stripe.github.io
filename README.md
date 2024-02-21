@@ -2,7 +2,7 @@
 
 https://stripe.dev landing page.
 
-## Development
+## Local Development
 
 ### Installation
 
