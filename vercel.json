@@ -1,0 +1,56 @@
+{
+    "rewrites": [
+        {
+          "source": "/stripe-java/(.*)",
+          "destination": "https://stripe.github.io/stripe-java/$1"
+        },
+        {
+          "source": "/stripe-ios/(.*)",
+          "destination": "https://stripe.github.io/stripe-ios/$1"
+        },
+        {
+          "source": "/stripe-android/(.*)",
+          "destination": "https://stripe.github.io/stripe-android/$1"
+        },
+        {
+          "source": "/scalding/(.*)",
+          "destination": "https://stripe.github.io/scalding/$1"
+        },
+        {
+          "source": "/sequins/(.*)",
+          "destination": "https://stripe.github.io/sequins/$1"
+        },
+        {
+          "source": "/veneur/(.*)",
+          "destination": "https://stripe.github.io/veneur/$1"
+        },
+        {
+          "source": "/elements-examples/(.*)",
+          "destination": "https://stripe.github.io/elements-examples/$1"
+        },
+        {
+          "source": "/stripe-terminal-ios/(.*)",
+          "destination": "https://stripe.github.io/stripe-terminal-ios/$1"
+        },
+        {
+          "source": "/stripe.github.io/(.*)",
+          "destination": "https://stripe.github.io/stripe.github.io/$1"
+        },
+        {
+          "source": "/stripe-terminal-android/(.*)",
+          "destination": "https://stripe.github.io/stripe-terminal-android/$1"
+        },
+        {
+          "source": "/stripe-react-native/(.*)",
+          "destination": "https://stripe.github.io/stripe-react-native/$1"
+        },
+        {
+          "source": "/stripe-terminal-react-native/(.*)",
+          "destination": "https://stripe.github.io/stripe-terminal-react-native/$1"
+        },
+        {
+          "source": "/stripe-identity-react-native/(.*)",
+          "destination": "https://stripe.github.io/stripe-identity-react-native/$1"
+        }
+    ]
+}
