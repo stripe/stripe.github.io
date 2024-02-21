@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-          "source": "/stripe-java/(.*)",
+          "source": "/stripe-java(?:/(.*?))?",
           "destination": "https://stripe.github.io/stripe-java/$1"
         },
         {
@@ -14,7 +14,7 @@
         },
         {
           "source": "/scalding/(.*)",
-          "destination": "https://stripe.github.io/scalding/$1"
+          "destination": "https://github.com/stripe-archive/scalding/$1"
         },
         {
           "source": "/sequins/(.*)",
