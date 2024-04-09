@@ -19,12 +19,12 @@
     ],
     "rewrites": [
         {
-          "source": "/stripe-java",
-          "destination": "https://stripe.github.io/stripe-java/"
-        },
-        {
           "source": "/stripe-java/(.*)",
           "destination": "https://stripe.github.io/stripe-java/$1"
+        },
+        {
+          "source": "/stripe-java",
+          "destination": "https://stripe.github.io/stripe-java/"
         },
         {
           "source": "/stripe-ios",
@@ -35,12 +35,12 @@
           "destination": "https://stripe.github.io/stripe-ios/$1"
         },
         {
-          "source": "/stripe-android",
-          "destination": "https://stripe.github.io/stripe-android/"
-        },
-        {
           "source": "/stripe-android/(.*)",
           "destination": "https://stripe.github.io/stripe-android/$1"
+        },
+        {
+          "source": "/stripe-android",
+          "destination": "https://stripe.github.io/stripe-android/"
         },
         {
           "source": "/sequins",
