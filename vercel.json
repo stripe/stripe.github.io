@@ -55,12 +55,16 @@
       {
         "source": "/stripe.github.io",
         "destination": "/"
+      },
+      {
+        "source": "/stripe.github.io/(.*)",
+        "destination": "/"
       }
   ],
   "rewrites": [
       {
         "source": "/stripe-java/(.*)",
-        "destination": "https://stripe-java.vercel.app/$1"
+        "destination": "https://stripe-java-six.vercel.app/$1"
       },
       {
         "source": "/stripe-ios",
@@ -72,7 +76,7 @@
       },
       {
         "source": "/stripe-android/(.*)",
-        "destination": "https://stripe-android-beta.vercel.app/$1"
+        "destination": "https://stripe-android-pink.vercel.app/$1"
       },
       {
         "source": "/elements-examples",
@@ -87,16 +91,12 @@
         "destination": "https://stripe-terminal-ios-five.vercel.app/$1"
       },
       {
-        "source": "/stripe.github.io/(.*)",
-        "destination": "https://stripe-github-io.vercel.app/$1"
-      },
-      {
         "source": "/stripe-terminal-android/(.*)",
         "destination": "stripe-terminal-android-nine.vercel.app/$1"
       },
       {
         "source": "/stripe-react-native/(.*)",
-        "destination": "https://stripe-react-native-fawn.vercel.app/$1"
+        "destination": "https://stripe-react-native-kappa.vercel.app/$1"
       },
       {
         "source": "/stripe-terminal-react-native/(.*)",
@@ -104,7 +104,7 @@
       },
       {
         "source": "/stripe-identity-react-native/(.*)",
-        "destination": "https://stripe-identity-react-native.vercel.app/$1"
+        "destination": "https://docs-stripe-identity-react-native.vercel.app/$1"
       }
   ]
 }
