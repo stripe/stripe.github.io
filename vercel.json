@@ -67,14 +67,6 @@
         "destination": "https://stripe-java-six.vercel.app/$1"
       },
       {
-        "source": "/stripe-ios",
-        "destination": "https://stripe-ios.vercel.app/"
-      },
-      {
-        "source": "/stripe-ios/(.*)",
-        "destination": "https://stripe-ios.vercel.app/$1"
-      },
-      {
         "source": "/stripe-android/(.*)",
         "destination": "https://stripe-android-pink.vercel.app/$1"
       },
