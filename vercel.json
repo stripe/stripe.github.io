@@ -63,6 +63,10 @@
   ],
   "rewrites": [
       {
+        "source": "/",
+        "destination": "https://beta.stripe.dev/"
+      },
+      {
         "source": "/stripe-java/(.*)",
         "destination": "https://stripe-java-six.vercel.app/$1"
       },
