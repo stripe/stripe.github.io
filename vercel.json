@@ -50,7 +50,7 @@
       },
       {
         "source": "/stripe-terminal-android",
-        "destination": "https://stripe-terminal-android-nine.vercel.app/"
+        "destination": "/stripe-terminal-android/index.html"
       },
       {
         "source": "/stripe.github.io",
@@ -88,7 +88,7 @@
       },
       {
         "source": "/stripe-terminal-android/(.*)",
-        "destination": "stripe-terminal-android-nine.vercel.app/$1"
+        "destination": "https://stripe-terminal-android-nine.vercel.app/$1"
       },
       {
         "source": "/stripe-react-native/(.*)",
