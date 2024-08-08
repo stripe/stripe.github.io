@@ -23,16 +23,36 @@ const getContentType = (path: string): string | null => {
 
 export async function middleware(request) {
   const url = new URL(request.url);
-  const { pathname, origin } = url;
+  let { pathname, origin } = url;
+  
   if (!pathname.startsWith("/stripe-ios")) {
-
     // If it's not a stripe-ios route, continue with normal routing
     return NextResponse.next();
   }
+
+  // Custom redirect rule: /stripe-ios/docs/Classes/:slug.html -> /stripe-ios/stripe/documentation/stripe/:slug
+  const classesMatch = pathname.match(/^\/stripe-ios\/docs\/Classes\/([a-zA-Z0-9]+)\.html$/);
+  if (classesMatch) {
+    const slug = classesMatch[1];
+    return NextResponse.redirect(`${origin}/stripe-ios/stripe/documentation/stripe/${slug.toLowerCase()}`);
+  }
+  
+  // Remove .html extension
+  if (pathname.endsWith('.html')) {
+    pathname = pathname.slice(0, -5); // Remove .html
+    return NextResponse.redirect(`${origin}${pathname.toLowerCase()}`);
+  }
+  
+  // Convert URL to lowercase
+  const lowercasePathname = pathname.toLowerCase();
+  if (pathname !== lowercasePathname) {
+    pathname = lowercasePathname;
+    return NextResponse.redirect(`${origin}${pathname}`);
+  }
+
   const slug = pathname.slice("/stripe-ios/".length); // Remove the initial "/stripe-ios/"
   
-
-  if (slug === "" || slug === "documentation") {
+  if (slug === "" || slug === "documentation" || slug === 'docs') {
     return NextResponse.redirect(`${origin}/stripe-ios/documentation/stripe`);
   }
 
@@ -40,11 +60,9 @@ export async function middleware(request) {
   const finalSlug = slug.includes(".") ? slug : `${slug}/index.html`;
 
   // Request the associated file from the `docs` branch on Github
-  let response = await fetch(githubUrl(finalSlug));
+  const response = await fetch(githubUrl(finalSlug));
   
   if (!response.ok) {
-
-    response = await fetch(githubUrl(finalSlug.toLocaleLowerCase()));
     return new Response("Not found", { status: 404, statusText: "Not Found" });
   }
   
@@ -62,16 +80,15 @@ export async function middleware(request) {
     });
     page = JSON.stringify(json);
   }
-  const headers: {
-    [key: string]: string;
-  } = {}
-  let contentType = getContentType(finalSlug)
+  
+  const headers = {};
+  let contentType = getContentType(finalSlug);
   if (!contentType) {
     const contentTypeHeader = response.headers.get('content-type') || '';
     const contentTypeMatch = contentTypeHeader.match(/^[^;]+/);
     contentType = contentTypeMatch ? contentTypeMatch[0] : null;
   }
-  if (contentType) headers['Content-Type'] = contentType
+  if (contentType) headers['Content-Type'] = contentType;
 
   return new Response(page, {
     headers
