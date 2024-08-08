@@ -40,9 +40,11 @@ export async function middleware(request) {
   const finalSlug = slug.includes(".") ? slug : `${slug}/index.html`;
 
   // Request the associated file from the `docs` branch on Github
-  const response = await fetch(githubUrl(finalSlug));
+  let response = await fetch(githubUrl(finalSlug));
   
   if (!response.ok) {
+
+    response = await fetch(githubUrl(finalSlug.toLocaleLowerCase()));
     return new Response("Not found", { status: 404, statusText: "Not Found" });
   }
   
