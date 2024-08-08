@@ -16,6 +16,13 @@ const contentTypeMap = {
   '.md': 'text/markdown',
 };
 
+const getGitHubFileSlug = (slug: string): string => {
+  if (slug.endsWith('.struct')) {
+    return `${slug}/index.html`
+  }
+  return slug.includes(".") ? slug : `${slug}/index.html`;
+}
+
 const getContentType = (path: string): string | null => {
   const ext = path.substring(path.lastIndexOf('.'));
   return contentTypeMap[ext] || null;
@@ -57,7 +64,7 @@ export async function middleware(request) {
   }
 
   // To conform with browser behavior, if a path is not a file then request index.html
-  const finalSlug = slug.includes(".") ? slug : `${slug}/index.html`;
+  const finalSlug = getGitHubFileSlug(slug)
 
   // Request the associated file from the `docs` branch on Github
   const response = await fetch(githubUrl(finalSlug));
