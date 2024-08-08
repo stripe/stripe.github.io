@@ -9,6 +9,10 @@
       "destination": "/stripe-ios/documentation/stripe"
     },
     {
+      "source": "/stripe-ios/docs/Classes/:slug([a-zA-Z0-9]+).html",
+      "destination": "/stripe-ios/stripe/documentation/stripe/:slug"
+    },
+    {
       "source": "/stripe-ios/docs/(.*)",
       "destination": "/stripe-ios/documentation/$1"
     },
