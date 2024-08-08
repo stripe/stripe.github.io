@@ -1,5 +1,9 @@
 {
   "redirects": [
+    {
+      "source": "/stripe-ios/docs",
+      "destination": "/stripe-ios/documentation/stripe"
+    },
       {
         "source": "/stripe-java",
         "destination": "/stripe-java/index.html"
