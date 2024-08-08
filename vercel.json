@@ -16,10 +16,6 @@
       "source": "/stripe-ios/docs/(.*)",
       "destination": "/stripe-ios/documentation/$1"
     },
-    {
-      "source": "/stripe-ios/docs/Classes/(*.)",
-      "destination": "/stripe-ios/stripe/documentation/stripe/$1"
-    },
       {
         "source": "/stripe-java",
         "destination": "/stripe-java/index.html"
