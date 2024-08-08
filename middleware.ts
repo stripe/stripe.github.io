@@ -63,6 +63,9 @@ export async function middleware(request) {
   const response = await fetch(githubUrl(finalSlug));
   
   if (!response.ok) {
+    if (finalSlug.endsWith('.html')) {
+      return NextResponse.redirect(`${origin}/stripe-ios/documentation/stripe`);
+    }
     return new Response("Not found", { status: 404, statusText: "Not Found" });
   }
   
