@@ -5,6 +5,10 @@
       "destination": "/stripe-ios/documentation/stripe"
     },
     {
+      "source": "/stripe-ios/docs/index.html",
+      "destination": "/stripe-ios/documentation/stripe"
+    },
+    {
       "source": "/stripe-ios/docs/(.*)",
       "destination": "/stripe-ios/documentation/$1"
     },
