@@ -9,6 +9,14 @@
       "destination": "/stripe-ios/documentation/stripe"
     },
     {
+      "source": "/stripe-ios/stripe-payments-ui/",
+      "destination": "/stripe-ios/stripepaymentsui/documentation/stripepaymentsui"
+    },
+    {
+      "source": "/stripe-ios/stripe-payments-ui/(.*)",
+      "destination": "/stripe-ios/stripepaymentsui/documentation/stripepaymentsui"
+    },
+    {
       "source": "/stripe-ios/docs/Classes/:slug([a-zA-Z0-9]+).html",
       "destination": "/stripe-ios/stripe/documentation/stripe/:slug"
     },
