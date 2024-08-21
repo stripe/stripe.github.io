@@ -102,10 +102,9 @@ export async function middleware(request) {
   if (contentType === 'text/html') {
     // HTML files can be cached for 1 hour
     headers['Cache-Control'] = 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=30';
-  } else {
+  } else if (contentType) {
     // Other files can be cached for a day
-    //cuheaders['Cache-Control'] = 's-maxage=3600, stale-while-revalidate=30';
-    //headers['Cache-Control'] = 'public, max-age=86400, immutable';
+    headers['Cache-Control'] = 'public, max-age=86400, s-max-age=86400, stale-while-revalidate=3600';
   }
 
   return new Response(page, {
