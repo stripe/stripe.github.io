@@ -66,6 +66,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/elements-examples",
+        destination: "https://docs.stripe.com/payments/accept-a-payment?platform=web&ui=elements",
+        permanent: false,
+      },
+      {
+        source: "/elements-examples/(.*)",
+        destination: "https://docs.stripe.com/payments/accept-a-payment?platform=web&ui=elements",
+        permanent: false,
+      },
+      {
         source: "/stripe-android",
         destination: "/stripe-android/index.html",
         permanent: true,
@@ -116,14 +126,6 @@ const nextConfig = {
       {
         source: "/stripe-android/(.*)",
         destination: "https://stripe-android-pink.vercel.app/$1"
-      },
-      {
-        source: "/elements-examples",
-        destination: "https://elements-examples.vercel.app/"
-      },
-      {
-        source: "/elements-examples/(.*)",
-        destination: "https://elements-examples.vercel.app/$1"
       },
       {
         source: "/stripe-terminal-ios/(.*)",
