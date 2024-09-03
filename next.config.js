@@ -106,6 +106,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/stripe-terminal-java",
+        destination: "/stripe-terminal-java/index.html",
+        permanent: true,
+      },
+      {
         source: "/stripe.github.io",
         destination: "/",
         permanent: true,
@@ -134,6 +139,10 @@ const nextConfig = {
       {
         source: "/stripe-terminal-android/(.*)",
         destination: "https://stripe-terminal-android-nine.vercel.app/$1"
+      },
+      {
+        source: "/stripe-terminal-java/(.*)",
+        destination: "https://stripe-terminal-java-ten.vercel.app/$1"
       },
       {
         source: "/stripe-react-native/(.*)",
